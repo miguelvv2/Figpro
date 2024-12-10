@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria-400: #868686;
+    --cor-primaria: #1B1B1B;
+    --cor-primaria-500: #242424;
+    --cor-secundaria: #FCC26B;
+    --title-font: 'Road Rage', cursive; 
+    --subtitle-font: 'Rock Salt', cursive;
+    --text-font: 'Roboto Mono', monospace;
+}
+
+header .group40{
+width: 25px;
+height: 12px;
+margin-right: 74px;
+margin-left: 18px;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header ul li{
+    display: flex; /* Opcional: garante que os ícones dentro de <li> também se alinhem */
+    align-items: center; /* Centraliza verticalmente os itens dentro de <li> */
+    
+  
+}
+header ul{
+    display: flex; /* Faz os itens da lista ficarem lado a lado */
+    list-style: none; /* Remove os marcadores de lista */
+    gap: 23px; /* Espaçamento entre os ícones */
+    margin-left: 42px
+  
+}
+
+header .logo{
+width: 159px;
+height: 49px;
+
+    }
+header .sing{
+    width: 17.9px;
+    height: 17.9px;
+
+}
+header .group{
+    width: 17.68px;
+    height: 17.68px;
+    
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 361px;
+    height: 318px;
+}
+.container h1{
+    font-family: var(--title-font);
+    font-size: 73px;
+    text-align: center;
+    color: var(--cor-primaria-400)
+}
+.container h2 {
+    font-family: var(--subtitle-font);
+    color: var(--cor-secundaria);
+   font-size: 24px;
+
+}
+.container p{
+    font-family:var(--text-font);
+    color:var(--cor-primaria-400);
+    font-size: 14px;
+}
