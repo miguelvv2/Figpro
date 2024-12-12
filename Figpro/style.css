@@ -24,6 +24,7 @@ margin-left: 18px;
 
 
 header{
+    margin-top: 73px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,25 +61,66 @@ header .group{
     
 }
 .container{
+    margin-top: 65px;
+    margin-left: 16px;
     align-items: center;
     justify-content: center;
     width: 361px;
     height: 318px;
+    position:relative;
+    
 }
 .container h1{
     font-family: var(--title-font);
     font-size: 73px;
     text-align: center;
-    color: var(--cor-primaria-400)
+  
+    color: var(--cor-primaria)
+
+}
+.subtitle h2{
+    position: absolute;
+    
+    transform: translate(20px, -37px); 
+}
+.container  span {
+    color:var(--cor-primaria-400)
+
 }
 .container h2 {
     font-family: var(--subtitle-font);
     color: var(--cor-secundaria);
    font-size: 24px;
+   font-weight: 400;
+
 
 }
 .container p{
     font-family:var(--text-font);
     color:var(--cor-primaria-400);
     font-size: 14px;
+    text-align: center;
+margin: 18px 30px;
+}
+.container .snippet{
+font-family: var(--title-font);
+font-size: 40px;
+margin-top: 30px;
+margin-left: 133px;
+
+color: black; /* Cor do texto */
+
+  text-shadow: 
+    -1px -1px 0 #FFC107, /* Sombra no canto superior esquerdo */
+    1px -1px 0 #FFC107,  /* Sombra no canto superior direito */
+    -1px 1px 0 #FFC107,  /* Sombra no canto inferior esquerdo */
+    1px 1px 0 #FFC107;   /* Sombra no canto inferior direito */
+}
+.container i{
+ margin-left: 8px;
+}
+
+
+.img-ghost{
+margin-left: 186px;
 }
