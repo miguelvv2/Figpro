@@ -1,126 +1,173 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --cor-primaria-400: #868686;
     --cor-primaria: #1B1B1B;
     --cor-primaria-500: #242424;
     --cor-secundaria: #FCC26B;
-    --title-font: 'Road Rage', cursive; 
+    --title-font: 'Road Rage', cursive;
     --subtitle-font: 'Rock Salt', cursive;
     --text-font: 'Roboto Mono', monospace;
 }
 
-header .group40{
-width: 25px;
-height: 12px;
-margin-right: 74px;
-margin-left: 18px;
+
+html, body {
+    height: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh; 
+    overflow: hidden; 
+}
 
-header{
+header {
+    display: flex;
+    justify-content: space-between;
     margin-top: 73px;
+    align-items: center;
+    padding: 10px 16px; 
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+header ul li img {
+    width: 18px;
+    height: 18px;
+}
+
+/* conteiner principal*/
+.container {
+    text-align: center;
+    padding: 20px 16px;
+    position: relative;
+    justify-content: center;
+}
+
+.container h1 {
+    font-family: var(--title-font);
+    font-size: 48px; 
+    line-height: 48px;
+    color: var(--cor-primaria);
+    margin-top: 60px;
+
+}
+.container span{
+    color: var(--cor-primaria-400);
+}
+.container .subtitle  {
+    font-family: var(--subtitle-font);
+    font-size: 24px; 
+    color: var(--cor-secundaria);
+    
+    position: absolute;
+    transform: translate(10px, -22px); 
+    margin: 0px 18px;
+
+
+}
+
+.container p {
+    font-family: var(--text-font);
+    color: var(--cor-primaria-400);
+    font-size: 14px; 
+    margin-top: 30px;
+}
+
+.container .snippet-letsgo {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-
-}
-header ul li{
-    display: flex; /* Opcional: garante que os ícones dentro de <li> também se alinhem */
-    align-items: center; /* Centraliza verticalmente os itens dentro de <li> */
-    
-  
-}
-header ul{
-    display: flex; /* Faz os itens da lista ficarem lado a lado */
-    list-style: none; /* Remove os marcadores de lista */
-    gap: 23px; /* Espaçamento entre os ícones */
-    margin-left: 42px
+    gap: 8px;
   
 }
 
-header .logo{
-width: 159px;
-height: 49px;
-
-    }
-header .sing{
-    width: 17.9px;
-    height: 17.9px;
-
-}
-header .group{
-    width: 17.68px;
-    height: 17.68px;
-    
-}
-.container{
-    margin-top: 65px;
-    margin-left: 16px;
-    align-items: center;
-    justify-content: center;
-    width: 361px;
-    height: 318px;
-    position:relative;
-    
-}
-.container h1{
+.container .text {
     font-family: var(--title-font);
-    font-size: 73px;
-    text-align: center;
-  
-    color: var(--cor-primaria)
-
+    font-size: 32px;
+    margin-top: 30px;
+    color: black;
+    text-shadow: 
+        -1px -1px 0 #FFC107, 
+        1px -1px 0 #FFC107,  
+        -1px 1px 0 #FFC107,  
+        1px 1px 0 #FFC107;   
 }
-.subtitle h2{
-    position: absolute;
+.icon-arrow {
+    margin-top: 38px;
+}
+
+.ghost-section {
+    display: flex;
+    justify-content: end;
+    align-items: end;
     
-    transform: translate(20px, -37px); 
-}
-.container  span {
-    color:var(--cor-primaria-400)
 
 }
-.container h2 {
-    font-family: var(--subtitle-font);
-    color: var(--cor-secundaria);
-   font-size: 24px;
-   font-weight: 400;
 
+.img-ghost {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+}
+
+
+ .list-icons ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
 
 }
-.container p{
-    font-family:var(--text-font);
-    color:var(--cor-primaria-400);
+.list-icons{
+ margin: 0px 64px 0px 5px;
+ align-items: center;
+ gap: 1.6rem;
+}
+
+.list-icons strong{
+    font-family: var(--text-font);
     font-size: 14px;
-    text-align: center;
-margin: 18px 30px;
 }
-.container .snippet{
-font-family: var(--title-font);
-font-size: 40px;
-margin-top: 30px;
-margin-left: 133px;
+.list-icons{
 
-color: black; /* Cor do texto */
-
-  text-shadow: 
-    -1px -1px 0 #FFC107, /* Sombra no canto superior esquerdo */
-    1px -1px 0 #FFC107,  /* Sombra no canto superior direito */
-    -1px 1px 0 #FFC107,  /* Sombra no canto inferior esquerdo */
-    1px 1px 0 #FFC107;   /* Sombra no canto inferior direito */
-}
-.container i{
- margin-left: 8px;
 }
 
 
-.img-ghost{
-margin-left: 186px;
+@media (max-width: 320px) {
+    .container h1 {
+        font-size: 60px; 
+        line-height: 40px;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .container p {
+        font-size: 12px;
+    }
+
+    .container .text {
+        font-size: 28px;
+    }
+
+    .img-ghost {
+        max-width: 150px; 
+    }
 }
