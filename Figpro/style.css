@@ -17,6 +17,7 @@
 
 html, body {
     height: 100%;
+    font-family: var(--text-font);
 }
 
 main {
@@ -36,14 +37,15 @@ header {
 }
 
 header .logo {
-    width: 100px;
+    width: 150px;
     height: auto;
+   
 }
 
 header ul {
     display: flex;
     list-style: none;
-    gap: 16px;
+    gap: 23px ;
 }
 
 header ul li img {
@@ -54,14 +56,14 @@ header ul li img {
 /* conteiner principal*/
 .container {
     text-align: center;
-    padding: 20px 16px;
+    padding: 20px 0px;
     position: relative;
     justify-content: center;
 }
 
 .container h1 {
     font-family: var(--title-font);
-    font-size: 48px; 
+    font-size: 77px; 
     line-height: 48px;
     color: var(--cor-primaria);
     margin-top: 60px;
@@ -72,24 +74,24 @@ header ul li img {
 }
 .container .subtitle  {
     font-family: var(--subtitle-font);
-    font-size: 24px; 
+    font-size: 17px; 
     color: var(--cor-secundaria);
-    
     position: absolute;
-    transform: translate(10px, -22px); 
+    transform: translate(26px, -28px); 
     margin: 0px 18px;
 
 
 }
 
 .container p {
+    padding: 0px 36px;
     font-family: var(--text-font);
     color: var(--cor-primaria-400);
     font-size: 14px; 
-    margin-top: 30px;
+    margin-top: 48px;
 }
 
-.container .snippet-letsgo {
+.ghost-section .snippet-letsgo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,10 +99,11 @@ header ul li img {
   
 }
 
-.container .text {
+.ghost-section .text {
     font-family: var(--title-font);
-    font-size: 32px;
-    margin-top: 30px;
+    font-size: 41px;
+    margin-top: -626px;
+    margin-left: -71px;
     color: black;
     text-shadow: 
         -1px -1px 0 #FFC107, 
@@ -109,11 +112,13 @@ header ul li img {
         1px 1px 0 #FFC107;   
 }
 .icon-arrow {
-    margin-top: 38px;
+    position: absolute;
+    margin-top: -617px;
+    margin-left: 45px;
 }
-
 .ghost-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     align-items: end;
     
@@ -124,6 +129,7 @@ header ul li img {
     width: 100%;
     max-width: 200px; 
     height: auto;
+    margin-top: 34px;
 }
 
 
@@ -131,11 +137,13 @@ header ul li img {
     display: flex;
     list-style: none;
     align-items: center;
+    gap: 8px;
     
 
 }
 .list-icons{
- margin: 0px 64px 0px 5px;
+    display: flex;
+ margin: 0px 36px 0px 17px;
  align-items: center;
  gap: 1.6rem;
 }
@@ -143,10 +151,69 @@ header ul li img {
 .list-icons strong{
     font-family: var(--text-font);
     font-size: 14px;
+    margin-left: 16px;
 }
-.list-icons{
 
+
+.container-2 {
+    padding: 106px 7px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+.container-2 p{
+ font-size: 13px;
+ text-align: center;
+}
+.box-margin{
+margin-top: 154px;
+width: 310px;
+height: 402px;
+position: relative;
+border-radius: 20px;
+padding: 0.5rem;
+border: 0.15rem solid #dadada;
+}
+.bird{
+position: absolute;
+top: -136px;
+left: 16px;
+}
+
+.list-column {
+    max-width: 397px;
+    height: 377px;
+    background-color: #ffd37c;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .row:last-child {
+    border-bottom: none;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c4c4c;
+    text-transform: capitalize;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
 
 
 @media (max-width: 320px) {
@@ -169,5 +236,12 @@ header ul li img {
 
     .img-ghost {
         max-width: 150px; 
+    }
+    .container-2 p{
+        font-size: 12px;
+
+    }
+    .container-2{
+
     }
 }
